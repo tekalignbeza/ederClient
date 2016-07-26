@@ -1,0 +1,143 @@
+<div class="content-section-a">
+
+    <div class="container panel panel-primary customPanel">
+        <div class="col-md-4 col-md-offset-4 text-center wrap_title">
+            <div>
+                <img ng-src="pics/{{memberDetail.id}}" class="employee-image">
+                <h4>{{memberDetail.memberId}}</h4>
+            </div>
+        </div>
+        <div class="col-md-10 col-md-offset-1 wrap_title mycenter">
+            <div class="col-md-5 col-md-offset-1 customList myrightSpace">
+                <h5>Primary Info</h5>
+                <p>{{memberDetail.firstName}}&snap {{memberDetail.lastName}}</p>
+                <p>Cell Phone : 6412230315</p>
+                <p>Home Phone : 6412230315</p>
+                <p>Email : tekalignbeza@gmail.com</p>
+                <p>Reg Date : 02/03/2002</p>
+            </div>
+            <div class="col-md-5  customList ">
+                <h5>Address</h5>
+                <p>Street1 : 3052 Mission ridge ct</p>
+                <p>Street2 : 3052 Mission ridge ct</p>
+                <p>City : Atlanta</p>
+                <p>State : Georgia</p>
+                <p>Zip : 30339</p>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1 customList ">
+            <h5>Payments</h5>
+            <table class="table mytable-striped">
+                <thead class="tableheader">
+                <tr>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Reason</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>02-03-2016</td>
+                    <td>200</td>
+                    <td>For May 2015</td>
+                </tr>
+                <tr>
+                    <td>02-03-2016</td>
+                    <td>200</td>
+                    <td>For May 2015</td>
+                </tr>
+                <tr>
+                    <td>02-03-2016</td>
+                    <td>200</td>
+                    <td>For May 2015</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-10 col-md-offset-1 customList ">
+            <h5>Given</h5>
+            <table class="table mytable-striped">
+                <thead class="tableheader">
+                <tr>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Reason</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>02-03-2016</td>
+                    <td>200</td>
+                    <td>For May 2015</td>
+                </tr>
+                <tr>
+                    <td>02-03-2016</td>
+                    <td>200</td>
+                    <td>For May 2015</td>
+                </tr>
+                <tr>
+                    <td>02-03-2016</td>
+                    <td>200</td>
+                    <td>For May 2015</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-10 mydivAlignment col-md-offset-1">
+            <p>{{employee.memberId}}</p>
+
+            <p>{{employee.firstName}}{{employee.lastName}}</p>
+
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="button-dash" title="Dashboard"  ng-click="go('/newpayment/{{employee.memberId}}')" type="button"
+                            class="btn btn-default btn-primary" data-toggle="tooltip">
+                        <span class="glyphicon glyphicon-dashboard"></span>&nbsp;Pay
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button id="button-nest" title="Manage your nests"  ng-click="go('/newexpense/{{employee.memberId}}')" type="button"
+                            class="btn btn-default btn-primary" data-toggle="tooltip">
+                        <span class="glyphicon glyphicon-home"></span>&nbsp;Exp
+                    </button>
+                </div>
+                <div id="justified-button-bar" class="btn-group">
+                    <button id="button-observe" title="Enter and edit observations"
+                            ng-click="go('/report/{{employee.memberId}}')" type="button" class="btn btn-default btn-primary"
+                            data-toggle="tooltip">
+                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Report
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

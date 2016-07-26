@@ -1,0 +1,106 @@
+<div class="content-section-a">
+    <div class="container panel panel-primary customPanel">
+
+        <form role="form" action="" method="post">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="customList myrightSpace col-md-5 col-md-offset-1 text-center wrap_title">
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input ng-model="newMember.lastName" type="text" placeholder="Last Name"
+                                   class="form-control" required>
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input ng-model="newMember.firstName" type="text" placeholder="First Name"
+                                   class="form-control" required>
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="input-group">
+                            <input ng-model="newMember.cellPhone" type="text" placeholder="Cell Phone"
+                                   class="form-control" required>
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input ng-model="newMember.homePhone" type="text" placeholder="Home Phone"
+                                   class="form-control">
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input ng-model="newMember.email" type="text" placeholder="Email" class="form-control">
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center wrap_title customList">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input ng-model="newMember.currentAddress.street1" type="text"
+                                   placeholder="Street 1 Address" class="form-control" required>
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input ng-model="newMember.currentAddress.street2" type="text"
+                                   placeholder="Street 2 Address" class="form-control">
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input ng-model="newMember.currentAddress.city" type="text" placeholder="City"
+                                   class="form-control" required>
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input ng-model="newMember.currentAddress.state" type="text" placeholder="State"
+                                   class="form-control" required>
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input ng-model="newMember.currentAddress.zip" type="text" placeholder="Zip"
+                                   class="form-control" required>
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1">
+                    <input type="submit" name="submit" id="submit" value="Submit"
+                           class="btn wow tada saveBtn btn-embossed btn-primary">
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>

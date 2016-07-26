@@ -1,0 +1,101 @@
+<div class="content-section-a">
+
+    <div class="container panel panel-primary customPanel">
+        <div class="col-md-10 col-md-offset-0 ">
+            <div class="col-md-4 col-md-offset-3 text-center wrap_title">
+                <input ng-model="query" type="search" placeholder="search" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-10 col-md-offset-1 customList ">
+            <h5>Payments</h5>
+            <table class="table mytable-striped">
+                <thead class="tableheader">
+                <tr><th></th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Reason</th>
+                    <!--<th>Confirmation No</th>-->
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>  <input type="radio" ></td>
+                    <td>02-03-2016</td>
+                    <td>200</td>
+                    <td>For May 2015</td>
+                    <!--<td>Conf 123</td>-->
+                </tr>
+                <tr>
+                    <td>  <input type="radio" ></td>
+                    <td>02-03-2016</td>
+                    <td>200</td>
+                    <td>For May 2015</td>
+                    <!--<td>Conf 123</td>-->
+                </tr>
+                <tr>
+                    <td>  <input type="radio" ></td>
+                    <td>02-03-2016</td>
+                    <td>200</td>
+                    <td>For May 2015</td>
+                    <!--<td>Conf 123</td>-->
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-10 mydivAlignment col-md-offset-1">
+            <p>{{employee.memberId}}</p>
+
+            <p>{{employee.firstName}}{{employee.lastName}}</p>
+
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button id="button-dash" title="Dashboard" ng-click="go('/newpayment/{{employee.memberId}}')" type="button"
+                            class="btn btn-default btn-primary" data-toggle="tooltip">
+                        <span class="glyphicon glyphicon-dashboard"></span>&nbsp;Edit
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button id="button-nest" title="Manage your nests" ng-click="go('/newpayment/{{employee.memberId}}')" type="button"
+                            class="btn btn-default btn-primary" data-toggle="tooltip">
+                        <span class="glyphicon glyphicon-home"></span>&nbsp;Del
+                    </button>
+                </div>
+                <div id="justified-button-bar" class="btn-group">
+                    <button id="button-observe" title="Enter and edit observations"
+                            onclick="canNotDelete()" type="button" class="btn btn-default btn-primary"
+                            data-toggle="tooltip">
+                        <span class="glyphicon glyphicon-eye-open"></span>&nbsp;Cancel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<div class="content-section-a">
+
+    <div class="container panel panel-primary customPanel">
+
+        <div class="col-md-10 col-md-offset-0 wrap_title mycenter">
+            <div class="col-md-4 col-md-offset-3 text-center wrap_title">
+                <input ng-model="query" type="search" placeholder="search" class="form-control">
+            </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1 wrap_title mycenter">
+            <div class="col-md-5 col-md-offset-1 customList myrightSpace">
+                <div class="form-group">
+                    <input value="{{(members|filter:query)[0].memberId}}" type="text" class="mydisableText"
+                           disabled="true">
+                </div>
+                <div class="form-group">
+                    <input value="{{(members|filter:query)[0].firstName}}" type="text" class=" mydisableText"
+                           disabled="true">
+                </div>
+                <div class="form-group">
+                    <input value="{{(members|filter:query)[0].lastName}}" type="text" class=" mydisableText"
+                           disabled="true">
+                </div>
+            </div>
+            <div class="col-md-5  customList ">
+                <div class="form-group">
+                    <input value="{{(members|filter:query)[0].currentAddress.city}}" type="text" class="mydisableText"
+                           disabled="true">
+                </div>
+                <div class="form-group">
+                    <input value="{{(members|filter:query)[0].currentAddress.state}}" type="text" class="mydisableText"
+                           disabled="true">
+                </div>
+                <div class="form-group">
+                    <input value="{{(members|filter:query)[0].currentAddress.zip}}" type="text" class="mydisableText"
+                           disabled="true">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-10 col-md-offset-1 wrap_title mycenter">
+            <div class="col-md-5 col-md-offset-1 customList myrightSpace">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input ng-model="newMember.email" type="text" placeholder="Amount" class="form-control">
+                                <span class="input-group-addon"><i
+                                        class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5  customList ">
+                <div class="form-group">
+                    <div class="input-group">
+                        <select class="form-control" name="singleSelect" id="singleSelect" ng-model="data.singleSelect">
+                            <option value="">---Please select Reasons---</option> <!-- not selected / blank option -->
+                            <option value="{{data.option1}}">Option 1</option> <!-- interpolation -->
+                            <option value="option-2">Option 2</option>
+                        </select>
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 mydivAlignment col-md-offset-2">
+            <div class="form-group">
+                <p><a class="btn btn-embossed btn-primary" href="#" role="button">Pay</a>
+                    <a class="btn btn-embossed btn-info" href="#" role="button">Cancel</a></p>
+            </div>
+
+</div>
+
